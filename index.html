@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumTechnologies Inc. - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container" id="login-container">
+            <img src="https://i.postimg.cc/hGQ1C1sZ/quantum-technologies-inc-high-resolution-logo-white.png"
+                alt="QuantumTechnologies Inc. Logo" class="logo">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit"><i class="fas fa-sign-in-alt"></i> Log In</button>
+                <div id="login-message"></div>
+            </form>
+        </div>
+
+        <div class="dashboard-container" id="dashboard-container">
+            <nav class="navbar">
+                <h2><img src="https://i.postimg.cc/hGQ1C1sZ/quantum-technologies-inc-high-resolution-logo-white.png"
+                        alt="QuantumTechnologies Inc. Logo" class="logo"></h2>
+                <button id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </nav>
+            <div class="dashboard-content">
+                <div id="user-dashboard" class="dashboard">
+                    <h3 id="dashboard-title"></h3>
+                    <div class="profile-info">
+                        <img id="profile-img" src="" alt="User Profile" class="profile-img">
+                        <div class="profile-details">
+                            <h4 id="user-name"></h4>
+                            <p id="user-title"></p>
+                        </div>
+                    </div>
+                    <div class="tasks">
+                        <h4><i class="fas fa-tasks"></i> Tasks</h4>
+                        <div id="task-timeline" class="timeline">
+                            <!-- Tasks will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
